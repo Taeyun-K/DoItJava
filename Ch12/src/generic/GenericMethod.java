@@ -1,4 +1,4 @@
-package chapter12.generic;
+package generic;
 
 public class GenericMethod {
 	public static <T, V> double makeRectangle(Point<T, V> p1, Point<T, V> p2) {
@@ -18,7 +18,7 @@ public class GenericMethod {
 		Point<Integer,Double> p2 = new Point<Integer, Double>(10, 10.0);
 		
 		double rect = GenericMethod.<Integer, Double>makeRectangle(p1,p2);
-		System.out.println("ë‘ ì ìœ¼ë¡œ ë§Œë“¤ì–´ì§„ ì‚¬ê°í˜•ì˜ ë„“ì´ëŠ” "+rect+"ì…ë‹ˆë‹¤.");
+		System.out.println("?‘ ? ?œ¼ë¡? ë§Œë“¤?–´ì§? ?‚¬ê°í˜•?˜ ?„“?´?Š” "+rect+"?…?‹ˆ?‹¤.");
 	}
 
 }

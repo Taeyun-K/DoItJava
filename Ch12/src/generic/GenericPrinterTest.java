@@ -1,4 +1,4 @@
-package chapter12.generic;
+package generic;
 
 public class GenericPrinterTest {
 

@@ -1,6 +1,6 @@
-package chapter12.generic;
+package generic;
 
-public class GenericPrinter<T extends Material> {	//<T>: ì œë„¤ë¦­ í´ë˜ìŠ¤
+public class GenericPrinter<T extends Material> {	//<T>: ? œ?„¤ë¦? ?´?˜?Š¤
 	private T material;	
 	
 	public void setMaterial(T material) {

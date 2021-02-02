@@ -1,4 +1,4 @@
-package chapter12.generic;
+package generic;
 
 public abstract class Material {
 	public abstract void doPrinting();

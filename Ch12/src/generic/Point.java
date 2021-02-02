@@ -1,4 +1,4 @@
-package chapter12.generic;
+package generic;
 
 public class Point <T,V>{
 	T x;
