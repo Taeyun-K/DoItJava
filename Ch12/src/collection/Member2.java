@@ -1,16 +1,18 @@
 package collection;
 
-public class Member implements Comparable<Member>{
-	//Variables
+import java.util.Comparator;
+
+public class Member2 implements Comparator<Member2> {
 	private int memberId;
 	private String memberName;
 	
 	//Constructor
-	public Member(int memberId, String memberName) {
+	public Member2(int membeerId, String memberName) {
 		this.memberId = memberId;
 		this.memberName = memberName;
 	}
 	
+
 	//Methods
 	public int getMemberId() {
 		return memberId;
@@ -40,8 +42,8 @@ public class Member implements Comparable<Member>{
 	
 	@Override
 	public boolean equals(Object obj) {
-		if(obj instanceof Member) {
-			Member member = (Member)obj;
+		if(obj instanceof Member2) {
+			Member2 member = (Member2)obj;
 			if(this.memberId == member.memberId)
 				return true;
 			else
@@ -51,12 +53,7 @@ public class Member implements Comparable<Member>{
 	}
 	
 	@Override
-	public int compareTo(Member member) {
-		// 새로 추가한 회원의 아이디가 더 크면 양수, 그렇지 않으면 음수, 같으면 0.
-		// 이렇게 구현하면 출력 결과 값이 오름차순으로 정렬되게 됨.
-		//return (this.memberId - member.memberId);
-		
-		// 이름 순 정렬
-		return this.memberName.compareTo(member.memberName);
+	public int compare(Member2 mem1, Member2 mem2) {
+		return mem1.getMemberId() - mem2.getMemberId();
 	}
 }
